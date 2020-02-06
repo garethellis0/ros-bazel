@@ -25,7 +25,7 @@ import_ros_workspace = repository_rule(
         "path": attr.string(mandatory = True),
         "_gen_ros_workspace": attr.label(
             executable = True,
-            default = Label("@//bazel:gen_ros_workspace_bzl.py"),
+            default = Label("@ros_example//bazel:gen_ros_workspace_bzl.py"),
             cfg = "host",
         ),
     },
